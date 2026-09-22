@@ -31,13 +31,16 @@
   .filters label { display:flex; align-items:center; gap:6px; cursor:pointer; }
   .panel-meta { color:#90CAF9; font-size:12px; margin-bottom:10px; }
   .sector-stats { display:flex; flex-wrap:wrap; gap:6px; margin-left:auto; }
-  .sector-tag { color:#D1D4DC; font-size:12px; background:#1E222D; border:1px solid #3A3E4D; border-radius:4px; padding:2px 8px; }
+  .sector-tag { color:#D1D4DC; font-size:12px; background:#1E222D; border:1px solid #3A3E4D; border-radius:4px; padding:2px 8px; cursor:pointer; }
+  .sector-tag:hover { border-color:#2962FF; }
   .sector-tag b { color:#F9A825; }
+  .sector-tag.active { background:#2962FF; border-color:#2962FF; color:#fff; }
+  .sector-tag.active b { color:#FFE082; }
 </style>
 </head>
 <body>
   <h1>JJ 日K標的掃描報表</h1>
-  <div class="meta">掃描時間：2026-09-22 23:21　共符合 415 檔</div>
+  <div class="meta">掃描時間：2026-09-22 23:42　共符合 415 檔</div>
   <div class="tabs"><button class="tab active" data-tab="A" onclick="showTab('A')">① 多方・MACD紅柱・已黃金交叉・持股線≥多空線 <span class="count">(102)</span></button><button class="tab" data-tab="B" onclick="showTab('B')">② 多方・MACD紅柱・尚未黃金交叉(OSC<0)・持股線≥多空線 <span class="count">(70)</span></button><button class="tab" data-tab="C" onclick="showTab('C')">③ 空方・MACD綠柱・已死亡交叉・持股線≤多空線 <span class="count">(118)</span></button><button class="tab" data-tab="D" onclick="showTab('D')">④ 空方・MACD綠柱・尚未死亡交叉(OSC>0)・持股線≤多空線 <span class="count">(125)</span></button></div>
   <div class="filters">
     <label><input type="checkbox" id="filterVol" onchange="applyFilters()"> 只顯示量增</label>
@@ -155,7 +158,7 @@
                 <span class="tag">傳產-食品</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
-                <span class="tag">量遞增</span>
+                <span class="tag">量遞減</span>
                 
               </div>
               <img src="images/1702.png" loading="lazy">
@@ -169,7 +172,7 @@
                 <span class="tag">傳產-化學工業</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
-                <span class="tag">量遞減</span>
+                <span class="tag">量遞增</span>
                 
               </div>
               <img src="images/1709.png" loading="lazy">
@@ -491,7 +494,7 @@
                 <span class="tag">電子下游-消費電子</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
-                <span class="tag">量遞增</span>
+                <span class="tag">量遞減</span>
                 
               </div>
               <img src="images/2477.png" loading="lazy">
@@ -774,7 +777,7 @@
                 <span class="tag">量遞增</span>
                 
               </div>
-              <img src="images/3167.png" loading="lazy">
+              <img src="images/3219.png" loading="lazy">
             </div>
             <div class="card" data-vol="遞減" data-futures="無" data-sector="傳產-汽車零組件">
               <div class="card-head">
@@ -2133,7 +2136,7 @@
                 <span class="tag">傳產-其他</span>
                 <span class="tag">權證有</span>
                 <span class="tag">期貨無</span>
-                <span class="tag">量遞減</span>
+                <span class="tag">量遞增</span>
                 
               </div>
               <img src="images/5292.png" loading="lazy">
@@ -2397,19 +2400,6 @@
                 <span class="price">收盤 534.00</span>
                 <span class="level">位階 高</span>
                 <span class="tag">電子中游-EMS</span>
-                <span class="tag">權證有</span>
-                <span class="tag">期貨無</span>
-                <span class="tag">量遞減</span>
-                
-              </div>
-              <img src="images/6953.png" loading="lazy">
-            </div>
-            <div class="card" data-vol="遞增" data-futures="無">
-              <div class="card-head">
-                <span class="sym">7744</span>
-                <span class="name">崴寶</span>
-                <span class="price">收盤 534.00</span>
-                <span class="level">位階 高</span>
                 <span class="tag">權證有</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞增</span>
@@ -2794,7 +2784,7 @@
                 <span class="tag">傳產-運動休閒</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
-                <span class="tag">量遞減</span>
+                <span class="tag">量遞增</span>
                 
               </div>
               <img src="images/1736.png" loading="lazy">
@@ -2954,19 +2944,6 @@
               <img src="images/3073.png" loading="lazy">
             </div>
             <div class="card" data-vol="遞增" data-futures="無" data-sector="軟體-遊戲">
-              <div class="card-head">
-                <span class="sym">3073</span>
-                <span class="name">天方能源</span>
-                <span class="price">收盤 20.30</span>
-                <span class="level">位階 佳</span>
-                <span class="tag">權證無</span>
-                <span class="tag">期貨無</span>
-                <span class="tag">量遞減</span>
-                
-              </div>
-              <img src="images/3073.png" loading="lazy">
-            </div>
-            <div class="card" data-vol="遞增" data-futures="無">
               <div class="card-head">
                 <span class="sym">3086</span>
                 <span class="name">華義*</span>
@@ -3374,19 +3351,6 @@
             </div>
             <div class="card" data-vol="遞減" data-futures="無" data-sector="傳產-其他">
               <div class="card-head">
-                <span class="sym">5468</span>
-                <span class="name">凱鈺</span>
-                <span class="price">收盤 24.45</span>
-                <span class="level">位階 低</span>
-                <span class="tag">權證無</span>
-                <span class="tag">期貨無</span>
-                <span class="tag">量遞減</span>
-                
-              </div>
-              <img src="images/5468.png" loading="lazy">
-            </div>
-            <div class="card" data-vol="遞減" data-futures="無">
-              <div class="card-head">
                 <span class="sym">5530</span>
                 <span class="name">龍巖</span>
                 <span class="price">收盤 48.90</span>
@@ -3568,19 +3532,6 @@
               <img src="images/6531.png" loading="lazy">
             </div>
             <div class="card" data-vol="遞減" data-futures="無" data-sector="軟體-遊戲">
-              <div class="card-head">
-                <span class="sym">6531</span>
-                <span class="name">愛普*</span>
-                <span class="price">收盤 934.00</span>
-                <span class="level">位階 高</span>
-                <span class="tag">權證有</span>
-                <span class="tag">期貨無</span>
-                <span class="tag">量遞增</span>
-                
-              </div>
-              <img src="images/6531.png" loading="lazy">
-            </div>
-            <div class="card" data-vol="遞減" data-futures="無">
               <div class="card-head">
                 <span class="sym">6542</span>
                 <span class="name">隆中</span>
@@ -3802,7 +3753,7 @@
                 <span class="tag">量遞減</span>
                 
               </div>
-              <img src="images/7738.png" loading="lazy">
+              <img src="images/6971.png" loading="lazy">
             </div>
             <div class="card" data-vol="遞減" data-futures="無" data-sector="傳產-觀光">
               <div class="card-head">
@@ -3911,7 +3862,7 @@
                 <span class="tag">傳產-百貨</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
-                <span class="tag">量遞增</span>
+                <span class="tag">量遞減</span>
                 
               </div>
               <img src="images/7782.png" loading="lazy">
@@ -3987,19 +3938,6 @@
               <img src="images/8083.png" loading="lazy">
             </div>
             <div class="card" data-vol="遞增" data-futures="無" data-sector="電子下游-手機製造">
-              <div class="card-head">
-                <span class="sym">8083</span>
-                <span class="name">瑞穎</span>
-                <span class="price">收盤 156.00</span>
-                <span class="level">位階 佳</span>
-                <span class="tag">權證有</span>
-                <span class="tag">期貨無</span>
-                <span class="tag">量遞增</span>
-                
-              </div>
-              <img src="images/8083.png" loading="lazy">
-            </div>
-            <div class="card" data-vol="遞增" data-futures="無">
               <div class="card-head">
                 <span class="sym">8101</span>
                 <span class="name">華冠</span>
@@ -4460,7 +4398,7 @@
                 <span class="tag">傳產-汽車</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
-                <span class="tag">量遞減</span>
+                <span class="tag">量遞增</span>
                 
               </div>
               <img src="images/2258.png" loading="lazy">
@@ -4503,7 +4441,7 @@
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
-                <span class="tag">保證金 原始 $3,856</span>
+                
               </div>
               <img src="images/2496.png" loading="lazy">
             </div>
@@ -5797,32 +5735,6 @@
             </div>
             <div class="card" data-vol="遞增" data-futures="無" data-sector="傳產-綠能環保">
               <div class="card-head">
-                <span class="sym">8421</span>
-                <span class="name">旭源</span>
-                <span class="price">收盤 12.80</span>
-                <span class="level">位階 低</span>
-                <span class="tag">權證無</span>
-                <span class="tag">期貨無</span>
-                <span class="tag">量遞減</span>
-                
-              </div>
-              <img src="images/8421.png" loading="lazy">
-            </div>
-            <div class="card" data-vol="遞增" data-futures="無">
-              <div class="card-head">
-                <span class="sym">8454</span>
-                <span class="name">富邦媒</span>
-                <span class="price">收盤 241.00</span>
-                <span class="level">位階 低</span>
-                <span class="tag">權證有</span>
-                <span class="tag">期貨無</span>
-                <span class="tag">量遞增</span>
-                
-              </div>
-              <img src="images/8454.png" loading="lazy">
-            </div>
-            <div class="card" data-vol="遞增" data-futures="無">
-              <div class="card-head">
                 <span class="sym">8476</span>
                 <span class="name">台境*</span>
                 <span class="price">收盤 19.50</span>
@@ -5963,9 +5875,17 @@
             </div></div>
         </section>
 <script>
+let selectedSector = null;
+
 function showTab(key) {
   document.querySelectorAll('.tab').forEach(el => el.classList.toggle('active', el.dataset.tab === key));
   document.querySelectorAll('.panel').forEach(el => el.classList.toggle('active', el.id === 'panel-' + key));
+  selectedSector = null;
+  applyFilters();
+}
+
+function selectSector(sector) {
+  selectedSector = (selectedSector === sector) ? null : sector;
   applyFilters();
 }
 
@@ -5976,7 +5896,9 @@ function applyFilters() {
     const cards = panel.querySelectorAll('.card');
     let shown = 0;
     cards.forEach(card => {
-      const ok = (!wantVol || card.dataset.vol === '遞增') && (!wantFutures || card.dataset.futures === '有');
+      const ok = (!wantVol || card.dataset.vol === '遞增')
+        && (!wantFutures || card.dataset.futures === '有')
+        && (!selectedSector || card.dataset.sector === selectedSector);
       card.classList.toggle('hidden', !ok);
       if (ok) shown++;
     });
@@ -5991,16 +5913,22 @@ function updateSectorStats() {
   const statsEl = document.getElementById('sectorStats');
   if (!activePanel || !statsEl) return;
 
+  const wantVol = document.getElementById('filterVol').checked;
+  const wantFutures = document.getElementById('filterFutures').checked;
   const counts = {};
-  activePanel.querySelectorAll('.card:not(.hidden)').forEach(card => {
+  activePanel.querySelectorAll('.card').forEach(card => {
+    const okBase = (!wantVol || card.dataset.vol === '遞增') && (!wantFutures || card.dataset.futures === '有');
+    if (!okBase) return;
     const sector = card.dataset.sector || '---';
     counts[sector] = (counts[sector] || 0) + 1;
   });
 
   const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]);
-  statsEl.innerHTML = entries.map(([sector, count]) =>
-    `<span class="sector-tag">${sector} <b>${count}</b></span>`
-  ).join('');
+  statsEl.innerHTML = entries.map(([sector, count]) => {
+    const active = sector === selectedSector ? ' active' : '';
+    const safeSector = sector.replace(/'/g, "\'");
+    return `<span class="sector-tag${active}" onclick="selectSector('${safeSector}')">${sector} <b>${count}</b></span>`;
+  }).join('');
 }
 
 updateSectorStats();
