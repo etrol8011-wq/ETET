@@ -30,12 +30,6 @@
   .filters { display:flex; flex-wrap:wrap; gap:16px; align-items:center; margin-bottom:16px; font-size:13px; }
   .filters label { display:flex; align-items:center; gap:6px; cursor:pointer; }
   .panel-meta { color:#90CAF9; font-size:12px; margin-bottom:10px; }
-  .sector-stats { display:flex; flex-wrap:wrap; gap:6px; margin-left:auto; }
-  .sector-tag { color:#D1D4DC; font-size:12px; background:#1E222D; border:1px solid #3A3E4D; border-radius:4px; padding:2px 8px; cursor:pointer; }
-  .sector-tag:hover { border-color:#2962FF; }
-  .sector-tag b { color:#F9A825; }
-  .sector-tag.active { background:#2962FF; border-color:#2962FF; color:#fff; }
-  .sector-tag.active b { color:#FFE082; }
 </style>
 </head>
 <body>
@@ -86,7 +80,6 @@
                 <span class="name">達新</span>
                 <span class="price">收盤 72.00</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-塑膠</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞增</span>
@@ -1633,7 +1626,7 @@
                 <span class="tag">傳產-化學工業</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
-                <span class="tag">量遞增</span>
+                <span class="tag">量遞減</span>
                 
               </div>
               <img src="images/1742.png" loading="lazy">
@@ -1644,13 +1637,12 @@
                 <span class="name">正隆</span>
                 <span class="price">收盤 25.25</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-紙業</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨有</span>
                 <span class="tag">量遞增</span>
                 <span class="tag">保證金 原始 $6,818</span>
               </div>
-              <img src="images/1904.png" loading="lazy">
+              <img src="images/2008.png" loading="lazy">
             </div>
             <div class="card" data-vol="遞減" data-futures="無" data-warrant="無" data-sector="傳產-汽車">
               <div class="card-head">
@@ -1676,7 +1668,7 @@
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞增</span>
-                
+                <span class="tag">保證金 原始 $972,001，小 $48,600</span>
               </div>
               <img src="images/2207.png" loading="lazy">
             </div>
@@ -1720,7 +1712,7 @@
                 <span class="tag">量遞增</span>
                 
               </div>
-              <img src="images/2607.png" loading="lazy">
+              <img src="images/2740.png" loading="lazy">
             </div>
             <div class="card" data-vol="遞增" data-futures="無" data-warrant="無" data-sector="傳產-航運">
               <div class="card-head">
@@ -1745,7 +1737,7 @@
                 <span class="tag">傳產-觀光</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
-                <span class="tag">量遞減</span>
+                <span class="tag">量遞增</span>
                 
               </div>
               <img src="images/2752.png" loading="lazy">
@@ -1832,7 +1824,7 @@
                 <span class="tag">量遞減</span>
                 <span class="tag">保證金 原始 $41,985</span>
               </div>
-              <img src="images/2881.png" loading="lazy">
+              <img src="images/3005.png" loading="lazy">
             </div>
             <div class="card" data-vol="遞增" data-futures="有" data-warrant="有" data-sector="金融-金控">
               <div class="card-head">
@@ -2022,7 +2014,6 @@
                 <span class="name">欣銓</span>
                 <span class="price">收盤 250.00</span>
                 <span class="level">位階 高</span>
-                <span class="tag">電子上游-IC-封測</span>
                 <span class="tag">權證有</span>
                 <span class="tag">期貨有</span>
                 <span class="tag">量遞增</span>
@@ -2204,7 +2195,6 @@
                 <span class="name">柏承</span>
                 <span class="price">收盤 53.40</span>
                 <span class="level">位階 高</span>
-                <span class="tag">電子上游-PCB-製造</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞增</span>
@@ -2260,7 +2250,6 @@
                 <span class="name">明達醫</span>
                 <span class="price">收盤 75.00</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-生技</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞增</span>
@@ -2386,7 +2375,6 @@
                 <span class="name">天能綠電</span>
                 <span class="price">收盤 99.70</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-綠能環保</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -2400,7 +2388,6 @@
                 <span class="name">福華</span>
                 <span class="price">收盤 15.10</span>
                 <span class="level">位階 高</span>
-                <span class="tag">電子中游-LCD-零組件</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -2474,7 +2461,6 @@
                 <span class="name">福壽</span>
                 <span class="price">收盤 11.25</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-食品</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -2530,7 +2516,6 @@
                 <span class="name">地球</span>
                 <span class="price">收盤 9.92</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-塑膠</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -2544,7 +2529,6 @@
                 <span class="name">中福</span>
                 <span class="price">收盤 21.05</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-其他</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -2558,7 +2542,6 @@
                 <span class="name">業旺</span>
                 <span class="price">收盤 25.50</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-紡織纖維</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -2614,7 +2597,6 @@
                 <span class="name">喬福</span>
                 <span class="price">收盤 18.90</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-電機</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -2670,7 +2652,19 @@
                 <span class="name">宏佳騰</span>
                 <span class="price">收盤 22.80</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-汽車零組件</span>
+                <span class="tag">權證無</span>
+                <span class="tag">期貨無</span>
+                <span class="tag">量遞減</span>
+                
+              </div>
+              <img src="images/1598.png" loading="lazy">
+            </div>
+            <div class="card" data-vol="遞減" data-futures="無">
+              <div class="card-head">
+                <span class="sym">1599</span>
+                <span class="name">宏佳騰</span>
+                <span class="price">收盤 22.80</span>
+                <span class="level">位階 佳</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -2810,7 +2804,6 @@
                 <span class="name">劍麟</span>
                 <span class="price">收盤 73.90</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-汽車零組件</span>
                 <span class="tag">權證有</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -2838,7 +2831,6 @@
                 <span class="name">宏碁</span>
                 <span class="price">收盤 31.30</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">電子下游-筆記型電腦</span>
                 <span class="tag">權證有</span>
                 <span class="tag">期貨有</span>
                 <span class="tag">量遞減</span>
@@ -3076,7 +3068,6 @@
                 <span class="name">華固</span>
                 <span class="price">收盤 91.20</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-營建</span>
                 <span class="tag">權證有</span>
                 <span class="tag">期貨有</span>
                 <span class="tag">量遞增</span>
@@ -3174,7 +3165,6 @@
                 <span class="name">華園</span>
                 <span class="price">收盤 12.05</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-觀光</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -3244,7 +3234,6 @@
                 <span class="name">麗嬰房</span>
                 <span class="price">收盤 5.92</span>
                 <span class="level">位階 低</span>
-                <span class="tag">傳產-百貨</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞增</span>
@@ -3342,8 +3331,7 @@
                 <span class="name">一零四</span>
                 <span class="price">收盤 207.50</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">軟體-其他</span>
-                <span class="tag">權證無</span>
+                <span class="tag">權證有</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞增</span>
                 
@@ -3370,7 +3358,6 @@
                 <span class="name">眾福科</span>
                 <span class="price">收盤 42.20</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">電子下游-顯示器</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -3608,7 +3595,6 @@
                 <span class="name">迎輝</span>
                 <span class="price">收盤 13.75</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">電子中游-LCD-零組件</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞增</span>
@@ -3678,7 +3664,6 @@
                 <span class="name">欣陸</span>
                 <span class="price">收盤 19.35</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-營建</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -3748,7 +3733,6 @@
                 <span class="name">懷特</span>
                 <span class="price">收盤 11.35</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-生技</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞增</span>
@@ -3790,7 +3774,6 @@
                 <span class="name">浩泰</span>
                 <span class="price">收盤 30.70</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-生技</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -3888,7 +3871,6 @@
                 <span class="name">郡都開發</span>
                 <span class="price">收盤 13.60</span>
                 <span class="level">位階 低</span>
-                <span class="tag">傳產-紡織纖維</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -3905,7 +3887,7 @@
                 <span class="tag">傳產-紡織纖維</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
-                <span class="tag">量遞增</span>
+                <span class="tag">量遞減</span>
                 
               </div>
               <img src="images/4432.png" loading="lazy">
@@ -3930,7 +3912,6 @@
                 <span class="name">江興鍛</span>
                 <span class="price">收盤 14.75</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-汽車零組件</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -3972,7 +3953,6 @@
                 <span class="name">全球傳動</span>
                 <span class="price">收盤 58.90</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-電機</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -4028,7 +4008,6 @@
                 <span class="name">燦星網</span>
                 <span class="price">收盤 15.80</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">電子下游-消費電子</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -7104,7 +7083,7 @@
                 <span class="tag">量遞減</span>
                 
               </div>
-              <img src="images/5371.png" loading="lazy">
+              <img src="images/4974.png" loading="lazy">
             </div>
             <div class="card" data-vol="遞減" data-futures="無" data-warrant="有" data-sector="電子中游-機殼">
               <div class="card-head">
@@ -7664,7 +7643,7 @@
                 <span class="tag">量遞增</span>
                 
               </div>
-              <img src="images/6645.png" loading="lazy">
+              <img src="images/6023.png" loading="lazy">
             </div>
             <div class="card" data-vol="遞增" data-futures="無" data-warrant="無" data-sector="傳產-生技">
               <div class="card-head">
@@ -7944,7 +7923,7 @@
                 <span class="tag">量遞增</span>
                 
               </div>
-              <img src="images/7705.png" loading="lazy">
+              <img src="images/6958.png" loading="lazy">
             </div>
             <div class="card" data-vol="遞增" data-futures="無" data-warrant="無" data-sector="傳產-其他">
               <div class="card-head">
@@ -7952,7 +7931,6 @@
                 <span class="name">裕山</span>
                 <span class="price">收盤 26.80</span>
                 <span class="level">位階 低</span>
-                <span class="tag">傳產-其他</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞增</span>
@@ -8022,7 +8000,6 @@
                 <span class="name">金色三麥</span>
                 <span class="price">收盤 89.10</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-觀光</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -8036,7 +8013,6 @@
                 <span class="name">享溫馨</span>
                 <span class="price">收盤 32.55</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-觀光</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -8400,7 +8376,6 @@
                 <span class="name">綠電</span>
                 <span class="price">收盤 20.15</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-綠能環保</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞增</span>
@@ -8428,7 +8403,6 @@
                 <span class="name">東哥遊艇</span>
                 <span class="price">收盤 139.50</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-其他</span>
                 <span class="tag">權證有</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞增</span>
@@ -8470,7 +8444,6 @@
                 <span class="name">光隆</span>
                 <span class="price">收盤 40.80</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-紡織纖維</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞增</span>
@@ -8526,7 +8499,6 @@
                 <span class="name">富堡</span>
                 <span class="price">收盤 12.80</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-其他</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -8610,7 +8582,6 @@
                 <span class="name">好樂迪</span>
                 <span class="price">收盤 50.10</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-觀光</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -8638,7 +8609,6 @@
                 <span class="name">琉園</span>
                 <span class="price">收盤 24.10</span>
                 <span class="level">位階 佳</span>
-                <span class="tag">傳產-其他</span>
                 <span class="tag">權證無</span>
                 <span class="tag">期貨無</span>
                 <span class="tag">量遞減</span>
@@ -8652,7 +8622,6 @@
                 <span class="name">世紀鋼</span>
                 <span class="price">收盤 89.00</span>
                 <span class="level">位階 低</span>
-                <span class="tag">傳產-鋼鐵</span>
                 <span class="tag">權證有</span>
                 <span class="tag">期貨有</span>
                 <span class="tag">量遞減</span>
@@ -8662,17 +8631,9 @@
             </div></div>
         </section>
 <script>
-let selectedSector = null;
-
 function showTab(key) {
   document.querySelectorAll('.tab').forEach(el => el.classList.toggle('active', el.dataset.tab === key));
   document.querySelectorAll('.panel').forEach(el => el.classList.toggle('active', el.id === 'panel-' + key));
-  selectedSector = null;
-  applyFilters();
-}
-
-function selectSector(sector) {
-  selectedSector = (selectedSector === sector) ? null : sector;
   applyFilters();
 }
 
@@ -8694,7 +8655,6 @@ function applyFilters() {
     const metaEl = panel.querySelector('.shown-count');
     if (metaEl) metaEl.textContent = shown;
   });
-  updateSectorStats();
 }
 
 function updateSectorStats() {
